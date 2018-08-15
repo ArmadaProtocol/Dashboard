@@ -10,15 +10,14 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-    <title>Armada | Dashboard</title>
+    <title>Armada | Analytics</title>
+
+    <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
+	<link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-
-    <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
-    <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
-    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
-    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -204,113 +203,153 @@
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-                <div class="row ">
-                    <div class="col-md-4 col-md-offset-1">
-                        <div class="card">
-                            <img src="images/property1.jpg" id="incardpropertyimage"/>
-                            <div id="innercard_headertext">
-                              <h2>4600 W Guadalupe St</h2>
-                              <p>Austin, TX 78751</p>
-                              <hr />
-                              <div class="container-fluid">
-                                <div class="row justify-content-center">
-                                  <div class ="col-md-4">
-                                    <h3>$148,317</h3>
-                                    <p id="innercard_normaltext_subtext" >Market Value</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>126</h3>
-                                    <p id="innercard_normaltext_subtext" >Investors</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>1,712</h3>
-                                    <p id="innercard_normaltext_subtext" >Tokens</p>
-                                  </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-primary p-20">
+                            <div class="media widget-ten">
+                                <div class="media-left meida media-middle">
+                                    <span><i class="ti-home f-s-40"></i></span>
                                 </div>
-                              </div>
+                                <div class="media-body media-text-right">
+                                    <h2 class="color-white">4</h2>
+                                    <p class="m-b-0">Total Properties</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-md-offset-1">
-                        <div class="card">
-                            <img src="images/property2.jpg" id="incardpropertyimage"/>
-                            <div id="innercard_headertext">
-                              <h2>36 Boston Ave.</h2>
-                              <p>Clifton Park, NY 12065</p>
-                              <hr />
-                              <div class="container-fluid">
-                                <div class="row justify-content-center">
-                                  <div class ="col-md-4">
-                                    <h3>$900,450</h3>
-                                    <p id="innercard_normaltext_subtext" >Market Value</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>14,964</h3>
-                                    <p id="innercard_normaltext_subtext" >Investors</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>200,000</h3>
-                                    <p id="innercard_normaltext_subtext" >Tokens</p>
-                                  </div>
+                    <div class="col-md-3">
+                        <div class="card bg-pink p-20">
+                            <div class="media widget-ten">
+                                <div class="media-left meida media-middle">
+                                    <span><i class="ti-money f-s-40"></i></span>
                                 </div>
-                              </div>
+                                <div class="media-body media-text-right">
+                                    <h2 class="color-white">$185,204.75</h2>
+                                    <p class="m-b-0">Net Returns</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-md-offset-1">
-                        <div class="card">
-                            <img src="images/property3.jpg" id="incardpropertyimage"/>
-                            <div id="innercard_headertext">
-                              <h2>186 Military Road Unit #6</h2>
-                              <p>Tuscaloosa, AL 35405</p>
-                              <hr />
-                              <div class="container-fluid">
-                                <div class="row justify-content-center">
-                                  <div class ="col-md-4">
-                                    <h3>$85,743</h3>
-                                    <p id="innercard_normaltext_subtext" >Market Value</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>12</h3>
-                                    <p id="innercard_normaltext_subtext" >Investors</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>18</h3>
-                                    <p id="innercard_normaltext_subtext" >Tokens</p>
-                                  </div>
+                    <div class="col-md-3">
+                        <div class="card bg-danger p-20">
+                            <div class="media widget-ten">
+                                <div class="media-left meida media-middle">
+                                    <span><i class="ti-location-pin f-s-40"></i></span>
                                 </div>
-                              </div>
+                                <div class="media-body media-text-right">
+                                    <h2 class="color-white">278</h2>
+                                    <p class="m-b-0">Total Visitor</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-md-offset-1">
-                        <div class="card">
-                            <img src="images/property4.jpg" id="incardpropertyimage"/>
-                            <div id="innercard_headertext">
-                              <h2>9427 Madison St.</h2>
-                              <p>Brockton, MA 02301</p>
-                              <hr />
-                              <div class="container-fluid">
-                                <div class="row justify-content-center">
-                                  <div class ="col-md-4">
-                                    <h3>$509,244</h3>
-                                    <p id="innercard_normaltext_subtext" >Market Value</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>92</h3>
-                                    <p id="innercard_normaltext_subtext" >Investors</p>
-                                  </div>
-                                  <div class ="col-md-4">
-                                    <h3>106</h3>
-                                    <p id="innercard_normaltext_subtext" >Tokens</p>
-                                  </div>
-                                </div>
-                              </div>
+                </div>
+				<div class="row">
+                    <div class="col-lg-6">
+                        <div class="card nestable-cart">
+                            <div class="card-title">
+                                <h4>My Property Map</h4>
+
+                            </div>
+                            <div class="datamap">
+                                <div id="world-datamap"></div>
                             </div>
                         </div>
+                    </div>
+					<div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Property Values</h4>
+                                <div class="ct-svg-chart" style="height:420px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                </div>
+                <!-- /# row -->
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-title">
+                                <h4>Portfolio Breakdown</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="current-progress">
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">4600 W Guadalupe St</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-15" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">
+                                                            14%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">36 Boston Ave.</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-35" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                                                            33%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">186 Military Road Unit #6</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-20" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">
+                                                            22%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-content">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="progress-text">9427 Madison St.</div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="current-progressbar">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-primary w-30" role="progressbar" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100">
+                                                            31%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-4">
                     </div>
 
-
+                </div>
 
 
                 <!-- End PAge Content -->
@@ -334,30 +373,23 @@
     <script src="js/sidebarmenu.js"></script>
     <!--stickey kit -->
     <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <!--Custom JavaScript -->
 
 
-    <!-- Amchart -->
-     <script src="js/lib/morris-chart/raphael-min.js"></script>
-    <script src="js/lib/morris-chart/morris.js"></script>
-    <script src="js/lib/morris-chart/dashboard1-init.js"></script>
+    <script src="js/lib/datamap/d3.min.js"></script>
+    <script src="js/lib/datamap/topojson.js"></script>
+    <script src="js/lib/datamap/datamaps.world.min.js"></script>
+    <script src="js/lib/datamap/datamap-init.js"></script>
 
-
-	<script src="js/lib/calendar-2/moment.latest.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/semantic.ui.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/prism.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.init.js"></script>
-
+    <script src="js/lib/weather/jquery.simpleWeather.min.js"></script>
+    <script src="js/lib/weather/weather-init.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- scripit init-->
 
+
+    <script src="js/lib/chartist/chartist.min.js"></script>
+    <script src="js/lib/chartist/chartist-plugin-tooltip.min.js"></script>
+    <script src="js/lib/chartist/chartist-init.js"></script>
+    <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
 
 </body>
