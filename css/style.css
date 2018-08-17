@@ -2276,6 +2276,36 @@ textarea {
   width: auto;
 }
 
+#discover_card_lower_banner_portfolio {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 35px;
+  background-color: green;  
+  text-align: center;
+}
+
+#discover_card_lower_banner_unowned {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 35px;
+  background-color: grey; 
+  text-align: center;
+}
+
+#discover_card_lower_banner_new {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 35px;
+  background-color: pink; 
+  text-align: center;
+}
+
+#discover_card_lower_banner_text {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 #innercard_headertext {
   padding: 20px;
 }
